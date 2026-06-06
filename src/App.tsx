@@ -15,7 +15,7 @@ import {
 const videoUrl =
   'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260406_094145_4a271a6c-3869-4f1c-8aa7-aeb0cb227994.mp4';
 
-const navLinks = ['Movies', 'TV Series', "Editor's Pick", 'Interviews', 'User Reviews'];
+const navLinks = ['Film', 'Serie TV', 'Scelte dalla redazione', 'Interviste', 'Recensioni'];
 
 function animationDelay(delay: number) {
   return { animationDelay: `${delay}ms` };
@@ -65,14 +65,14 @@ function App() {
             className="liquid-glass animate-blur-fade-up hidden items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-colors hover:text-gray-300 sm:flex md:px-6"
             style={animationDelay(350)}
           >
-            Search
+            Cerca
             <Search size={18} aria-hidden="true" />
           </button>
 
           <button
             type="button"
             className="liquid-glass animate-blur-fade-up hidden h-10 w-10 items-center justify-center rounded-full transition-colors hover:text-gray-300 sm:flex"
-            aria-label="Profile"
+            aria-label="Profilo"
             style={animationDelay(400)}
           >
             <User size={18} aria-hidden="true" />
@@ -81,7 +81,7 @@ function App() {
           <button
             type="button"
             className="liquid-glass animate-blur-fade-up relative flex h-10 w-10 items-center justify-center rounded-full lg:hidden"
-            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isMenuOpen ? 'Chiudi menu' : 'Apri menu'}
             aria-expanded={isMenuOpen}
             onClick={() => setIsMenuOpen((current) => !current)}
             style={animationDelay(350)}
@@ -128,13 +128,13 @@ function App() {
               type="button"
               className="liquid-glass flex flex-1 items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium"
             >
-              Search
+              Cerca
               <Search size={18} aria-hidden="true" />
             </button>
             <button
               type="button"
               className="liquid-glass flex h-10 w-10 items-center justify-center rounded-full"
-              aria-label="Profile"
+              aria-label="Profilo"
             >
               <User size={18} aria-hidden="true" />
             </button>
@@ -159,7 +159,7 @@ function App() {
               </span>
               <span className="flex items-center gap-2">
                 <Calendar size={16} className="sm:h-5 sm:w-5" aria-hidden="true" />
-                April, 2025
+                Aprile 2025
               </span>
             </div>
 
@@ -167,14 +167,14 @@ function App() {
               className="animate-blur-fade-up mb-4 text-3xl font-normal leading-[0.95] sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl"
               style={{ ...animationDelay(400), letterSpacing: '-0.04em' }}
             >
-              Step Through. Work Smarter.
+              Entra nella storia. Vivi il cinema.
             </h1>
 
             <p
               className="animate-blur-fade-up mb-6 max-w-2xl text-base text-gray-400 sm:text-lg md:mb-12 md:text-xl"
               style={animationDelay(500)}
             >
-              A voyage through forgotten realms, where past and future intertwine.
+              Un viaggio tra mondi dimenticati, dove passato e futuro si sfiorano.
             </p>
 
             <div className="flex flex-wrap gap-3 sm:gap-4">
@@ -184,7 +184,7 @@ function App() {
                 style={animationDelay(600)}
               >
                 <Play size={18} className="fill-black" aria-hidden="true" />
-                Watch Now
+                Guarda ora
               </button>
 
               <button
@@ -192,7 +192,7 @@ function App() {
                 className="liquid-glass animate-blur-fade-up rounded-full px-6 py-2.5 text-sm font-medium transition-colors hover:text-gray-300 sm:px-8 sm:py-3"
                 style={animationDelay(700)}
               >
-                Learn More
+                Scopri di più
               </button>
             </div>
           </div>
@@ -204,7 +204,7 @@ function App() {
               style={animationDelay(800)}
             >
               <ChevronLeft size={18} aria-hidden="true" />
-              Previous
+              Precedente
             </button>
 
             <button
@@ -212,7 +212,7 @@ function App() {
               className="liquid-glass animate-blur-fade-up flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-medium transition-colors hover:text-gray-300 sm:px-6 sm:py-3"
               style={animationDelay(900)}
             >
-              Next
+              Successivo
               <ChevronRight size={18} aria-hidden="true" />
             </button>
           </div>
